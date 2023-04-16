@@ -21,7 +21,10 @@
 	"exports": {
 		".": "./src/index.js",
 		"./esm": "./src/esm.mjs",
-		"./register": "./src/register.mjs",
+		"./register": {
+			"import": "./src/register.mjs",
+			"require": "./src/register.cjs"
+		},
 		"./*": "./*"
 	},
 	"bin": {
